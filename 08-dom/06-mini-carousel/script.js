@@ -3,7 +3,7 @@
 
 (() => {
 
-    let gallery= [
+    let gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -12,5 +12,14 @@
     ];
 
     // your code here
+    let img = document.querySelector('img');
 
+    let slide = gallery[Symbol.iterator]();
+    img.src = slide.next().value; // switch to next value in array
+    let i = 1;
+
+    document.getElementById("next").addEventListener("click", () => {
+        if (i < gallery.length) img.src = slide.next().value;
+        i++;
+    })
 })();

@@ -227,6 +227,9 @@ dl dd {
 
 input.error {
     border-color: red;
+    color: red;
+    border: 15px solid red;
+    text-align: center;
 }
 
 ol#target {

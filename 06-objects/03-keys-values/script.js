@@ -11,4 +11,23 @@
         status: "married",
     };
     // your code here
+    // let run = document.getElementById("run");
+    // run.addEventListener('click', function() {
+    //     for (let [key, value] of Object.entries(person)) {
+    //         console.log(`${key}: ${value}`);
+    //     }
+
+    // })
+
+    // SHORTER WAY
+
+    const run = document.getElementById('run');
+run.addEventListener('click', () => {
+
+    for (let k in person) {
+        console.log(`${k} : ${person[k]}`)
+    }
+
+})
+
 })();

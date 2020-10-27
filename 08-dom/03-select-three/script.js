@@ -4,5 +4,11 @@
 (() => {
 
     // your code here
+    let target = document.querySelectorAll(".target");
+    // getElementByClassName doesn't work here
+    target.forEach(target => {
+        target.innerHTML = "Lul";
+
+    });
 
 })();
