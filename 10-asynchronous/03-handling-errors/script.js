@@ -3,4 +3,15 @@
 
 (() => {
     // your code here
+    let run = document.getElementById("run");
+
+    run.addEventListener("click", () => {
+        window.lib.getPersons((err, persons) => {
+            if (err) {
+                console.error(err);
+            } else {
+                console.log(persons);
+            }
+        });
+    });
 })();
